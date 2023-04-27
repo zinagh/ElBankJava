@@ -15,9 +15,8 @@ import java.util.List;
  */
 public interface IOperationCredit {
                     public boolean ajoutOperationCredit(OperationCredit O)throws SQLException;
-        public boolean updateOperationCredit(OperationCredit O)throws SQLException;
+        public boolean updateOperationCredit(OperationCredit O, int id)throws SQLException;
     public boolean suprimeOperationCredit(OperationCredit O)throws SQLException;
     public List<OperationCredit> getAll()throws SQLException;
-    
     
 }

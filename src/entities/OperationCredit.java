@@ -113,6 +113,30 @@ public class OperationCredit {
     public String toString() {
         return "OperationCredit{" + "id=" + id + ", credit=" + credit + ", dateOp=" + dateOp + ", montPayer=" + montPayer + ", echeance=" + echeance + ", tauxInteret=" + tauxInteret + ", solvabilite=" + solvabilite + ", typeOperation=" + typeOperation + '}';
     }
+
+    public void setDPO(Date valueOf) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setmontantPO(int parseInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setecheanceo(Date valueOf) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setintereto(int parseInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setsolv(int parseInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void settype(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

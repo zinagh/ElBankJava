@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface Icredit {
                 public boolean ajoutcredit(credit c)throws SQLException;
-        public boolean updatecredit(credit c)throws SQLException;
+        public boolean updatecredit(credit c, int id) throws SQLException;
     public boolean suprimecredit(credit c)throws SQLException;
     public List<credit> getAll()throws SQLException;
     

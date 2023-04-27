@@ -40,12 +40,12 @@ public class OperationCreditService implements IOperationCredit{
             pst.setInt(6, O.getSolvabilite());
             pst.setString(7, O.getTypeOperation());
             pst.executeUpdate();
-            System.out.println("OperationCredi Added");
+            System.out.println("OperationCredit Added");
             return true;   
     }
 
     @Override
-    public boolean updateOperationCredit(OperationCredit O) throws SQLException {
+    public boolean updateOperationCredit(OperationCredit O, int id) throws SQLException {
                String request = "UPDATE operation_credit SET credit_id=?, date_op=?, mont_payer=?, echeance=?, taux_interet=?, solvabilite=?, type_operation=? WHERE id=?";
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setInt(1, O.getCredit().getId());
@@ -60,7 +60,36 @@ public class OperationCreditService implements IOperationCredit{
             System.out.println("OperationCredi Updated");
             return true;
     }
+    
+    
+    public OperationCredit findById(int id) throws SQLException {
+    String request = "SELECT * FROM operation_credit WHERE id = ?";
+    PreparedStatement pst = cnx.prepareStatement(request);
+    pst.setInt(1, id);
+    ResultSet rs = pst.executeQuery();
+    if (rs.next()) {
+        OperationCredit O = new OperationCredit();
+        
+        
+        
+        O.setId(rs.getInt("id"));
+        
+        credit cred = new credit();
+        cred.setId(rs.getInt("credit_id"));
+        O.setCredit(cred);
+        O.setDateOp(rs.getDate("date_op"));
+        O.setMontPayer(rs.getInt("mont_payer"));
+        O.setEcheance(rs.getDate("echeance"));
+        O.setTauxInteret(rs.getInt("taux_interet"));
+        O.setSolvabilite(rs.getInt("solvabilite"));
+        O.setTypeOperation(rs.getString("type_operation"));
 
+        return O;
+    }
+    return null; // if no matching record is found
+}
+
+    
     @Override
     public boolean suprimeOperationCredit(OperationCredit O) throws SQLException {
             String req = "DELETE FROM operation_credit WHERE id = ?";
@@ -80,7 +109,9 @@ public class OperationCreditService implements IOperationCredit{
 
     while (rs.next()) {
         OperationCredit O = new OperationCredit();
-        O.setId(rs.getInt("id"));
+        credit C = new credit();
+        C.setId(rs.getInt("credit_id"));
+        O.setCredit(C);
         O.setDateOp(rs.getDate("date_op"));
         O.setMontPayer(rs.getInt("mont_payer"));
         O.setEcheance(rs.getDate("echeance"));
@@ -88,19 +119,15 @@ public class OperationCreditService implements IOperationCredit{
         O.setSolvabilite(rs.getInt("solvabilite"));
         O.setTypeOperation(rs.getString("type_operation"));
 
-        credit C = new credit();
-        C.setId(rs.getInt("credit_id"));
-        O.setCredit(C);
-
         list.add(O);
     }
     return list;
     }
-    public List<OperationCredit> getAllByCreditId(int creditId) throws SQLException {
+public List<OperationCredit> getAllByMontPayer(int montPayer) throws SQLException {
     List<OperationCredit> list = new ArrayList<>();
-    String request = "SELECT * FROM operation_credit WHERE credit_id = ?";
+    String request = "SELECT * FROM operation_credit WHERE mont_payer = ?";
     PreparedStatement pst = cnx.prepareStatement(request);
-    pst.setInt(1, creditId);
+    pst.setInt(1, montPayer);
     ResultSet rs = pst.executeQuery();
 
     while (rs.next()) {
@@ -121,6 +148,8 @@ public class OperationCreditService implements IOperationCredit{
     }
     return list;
 }
+
+
 
     
     

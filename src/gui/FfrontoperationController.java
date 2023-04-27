@@ -70,6 +70,6 @@ aff_op.setText(Integer.toString(o.getCredit().getId()));
     
     
     
-    }
+    } 
     
 }

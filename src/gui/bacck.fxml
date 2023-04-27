@@ -14,165 +14,175 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="679.0" prefWidth="1065.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BacckController">
-   <children>
-      <Accordion layoutX="8.0" layoutY="5.0" prefHeight="806.0" prefWidth="1234.0">
-         <panes>
-            <TitledPane animated="false" text="credit">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
-                     <children>
-                        <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NUM DE COMPTE" wrappingWidth="284.53668785095215">
+    <children>
+        <Accordion layoutX="8.0" layoutY="5.0" prefHeight="806.0" prefWidth="1234.0">
+            <panes>
+                <TitledPane animated="false" text="credit">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
+                            <children>
+                                <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NUM DE COMPTE" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_num" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MONTAN" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_montan" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU PREMIER PAIEMENT" wrappingWidth="349.3366756439209">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <DatePicker fx:id="col_datep" prefHeight="26.0" prefWidth="328.0" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU DERNIER PAIEMENT  " wrappingWidth="346.9366512298584">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <DatePicker fx:id="col_dated" prefHeight="26.0" prefWidth="323.0" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DUREE DU PAIEMENT " wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_dur" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ECHANCE" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <DatePicker fx:id="col_echance" prefHeight="26.0" prefWidth="330.0" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INTERET" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_inter" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ETAT CREDIT" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_etat" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE CRIDET" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_type" style="-fx-background-color: #1B98E00B;" />
+                                        <Separator prefHeight="38.0" prefWidth="350.0" />
+                                        <Button mnemonicParsing="false" onAction="#AJOUTER_cridt" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
+                                        <Separator prefHeight="38.0" prefWidth="350.0" />
+                                        <Button fx:id="modifiercredit" mnemonicParsing="false" onAction="#modifiercredit" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Modifier" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saisir un e-mail:" wrappingWidth="284.53668785095215">
                                  <font>
                                     <Font name="Bell MT" size="21.0" />
                                  </font>
                               </Text>
-                              <TextField fx:id="col_num" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MONTAN" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_montan" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU PREMIER PAIEMENT" wrappingWidth="349.3366756439209">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <DatePicker fx:id="col_datep" prefHeight="26.0" prefWidth="328.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU DERNIER PAIEMENT  " wrappingWidth="346.9366512298584">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <DatePicker fx:id="col_dated" prefHeight="26.0" prefWidth="323.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DUREE DU PAIEMENT " wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_dur" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ECHANCE" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <DatePicker fx:id="col_echance" prefHeight="26.0" prefWidth="330.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INTERET" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_inter" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ETAT CREDIT" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_etat" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE CRIDET" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_type" style="-fx-background-color: #1B98E00B;" />
-                              <Separator prefHeight="38.0" prefWidth="350.0" />
-                              <Button mnemonicParsing="false" onAction="#AJOUTER_cridt" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
-                              <Separator prefHeight="38.0" prefWidth="350.0" />
-                           </children>
-                        </VBox>
-                        <TableView fx:id="tab_credit" layoutX="350.0" prefHeight="753.0" prefWidth="884.0">
-                           <columns>
-                              <TableColumn fx:id="col_id" prefWidth="30.399993896484375" text="id " />
-                              <TableColumn fx:id="collidcompt" prefWidth="120.80001831054688" text="numero_compte_id" />
-                              <TableColumn fx:id="col_mont" minWidth="8.79998779296875" prefWidth="79.99996948242188" text="mont_credit" />
-                              <TableColumn fx:id="col_datepe" prefWidth="49.5999755859375" text="datepe" />
-                              <TableColumn fx:id="col_datede" prefWidth="61.60003662109375" text="datede" />
-                              <TableColumn fx:id="col_dure" prefWidth="70.4000244140625" text="duree_c" />
-                              <TableColumn fx:id="col_echeancec" prefWidth="75.199951171875" text="echeance" />
-                              <TableColumn fx:id="col_tauxc" prefWidth="95.199951171875" text="taux_interet" />
-                              <TableColumn fx:id="col_decisionc" prefWidth="73.5999755859375" text="decision" />
-                              <TableColumn fx:id="col_etatc" minWidth="0.0" prefWidth="80.7999267578125" text="etat_credit" />
-                              <TableColumn fx:id="colllllltype" prefWidth="75.2000732421875" text="type_credit" />
-                              <TableColumn fx:id="col_detalc" prefWidth="64.7999267578125" text="delate" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </content>
-            </TitledPane>
-            <TitledPane animated="false" text="operation_credit">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
-                     <children>
-                        <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit_id" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_cridtid" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date op" wrappingWidth="349.3366756439209">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <DatePicker fx:id="col_dateop" prefHeight="26.0" prefWidth="328.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="montan payer" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_mantanpayer" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="echnace" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <DatePicker fx:id="col_echnaaceop" prefHeight="26.0" prefWidth="330.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="interet" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_interetop" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solvabilite" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_solva" style="-fx-background-color: #1B98E00B;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="type opreration" wrappingWidth="284.53668785095215">
-                                 <font>
-                                    <Font name="Bell MT" size="21.0" />
-                                 </font>
-                              </Text>
-                              <TextField fx:id="col_typeop" style="-fx-background-color: #1B98E00B;" />
-                              <Separator prefHeight="38.0" prefWidth="350.0" />
-                              <Button mnemonicParsing="false" onAction="#ajouter_op" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
-                              <Separator prefHeight="38.0" prefWidth="350.0" />
-                           </children>
-                        </VBox>
-                        <TableView fx:id="tabop" layoutX="350.0" prefHeight="710.0" prefWidth="793.0">
-                           <columns>
-                              <TableColumn fx:id="colop_id" prefWidth="75.0" text="id" />
-                              <TableColumn fx:id="colop_credit" prefWidth="75.0" text="credit_id" />
-                              <TableColumn fx:id="colop_dateop" prefWidth="75.0" text="date_opdate" />
-                              <TableColumn fx:id="colop_man" prefWidth="75.0" text="mont_payer" />
-                              <TableColumn fx:id="colop_echeance" prefWidth="100.800048828125" text="echeance date" />
-                              <TableColumn fx:id="colop_taux" prefWidth="102.4000244140625" text="taux_interet" />
-                              <TableColumn fx:id="colop_solvabilite" prefWidth="95.20001220703125" text="solvabilite" />
-                              <TableColumn fx:id="colop_operation" prefWidth="99.199951171875" text="type_operation" />
-                              <TableColumn fx:id="colop_dalate" prefWidth="93.5999755859375" text="delate" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </content>
-            </TitledPane>
-         </panes>
-      </Accordion>
-   </children>
+                              <TextField fx:id="col_sender" style="-fx-background-color: #1B98E00B;" />
+                              <Button fx:id="sender" mnemonicParsing="false" onAction="#sendermail" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Envoyer" />
+                                    </children>
+                                </VBox>
+                                <TableView fx:id="tab_credit" layoutX="350.0" onMouseClicked="#ClickModif" prefHeight="753.0" prefWidth="884.0">
+                                    <columns>
+                                        <TableColumn fx:id="col_id" prefWidth="30.399993896484375" text="id " />
+                                        <TableColumn fx:id="collidcompt" prefWidth="112.79998779296875" text="numero_compte_id" />
+                                        <TableColumn fx:id="col_mont" minWidth="8.79998779296875" prefWidth="88.79998779296875" text="mont_credit" />
+                                        <TableColumn fx:id="col_datepe" prefWidth="49.5999755859375" text="datepe" />
+                                        <TableColumn fx:id="col_datede" prefWidth="61.60003662109375" text="datede" />
+                                        <TableColumn fx:id="col_dure" prefWidth="70.4000244140625" text="duree_c" />
+                                        <TableColumn fx:id="col_echeancec" prefWidth="75.199951171875" text="echeance" />
+                                        <TableColumn fx:id="col_tauxc" prefWidth="95.199951171875" text="taux_interet" />
+                                        <TableColumn fx:id="col_decisionc" prefWidth="73.5999755859375" text="decision" />
+                                        <TableColumn fx:id="col_etatc" minWidth="0.0" prefWidth="80.7999267578125" text="etat_credit" />
+                                        <TableColumn fx:id="colllllltype" prefWidth="75.2000732421875" text="type_credit" />
+                                        <TableColumn fx:id="col_detalc" prefWidth="64.7999267578125" text="delete" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="operation_credit">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
+                            <children>
+                                <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit_id" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_cridtid" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date op" wrappingWidth="349.3366756439209">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <DatePicker fx:id="col_dateop" prefHeight="26.0" prefWidth="328.0" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="montant payer" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_mantanpayer" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="echeance" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <DatePicker fx:id="col_echnaaceop" prefHeight="26.0" prefWidth="330.0" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="interet" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_interetop" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solvabilite" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_solva" style="-fx-background-color: #1B98E00B;" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="type opreration" wrappingWidth="284.53668785095215">
+                                            <font>
+                                                <Font name="Bell MT" size="21.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="col_typeop" style="-fx-background-color: #1B98E00B;" />
+                                        <Separator prefHeight="38.0" prefWidth="350.0" />
+                                        <Button mnemonicParsing="false" onAction="#ajouter_op" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
+                                        <Separator prefHeight="38.0" prefWidth="350.0" />
+                              <Button fx:id="modifieroperation" mnemonicParsing="false" onAction="#modifieroperation" prefHeight="26.0" prefWidth="359.0" text="Modifier " />
+                              <Button fx:id="excel" mnemonicParsing="false" onAction="#excel_extraction" prefHeight="26.0" prefWidth="351.0" text="Extraction Excel " />
+                                    </children>
+                                </VBox>
+                                <TableView fx:id="tabop" layoutX="350.0" onMouseClicked="#clickingmodi" prefHeight="710.0" prefWidth="793.0">
+                                    <columns>
+                                        <TableColumn fx:id="colop_id" prefWidth="75.0" text="id" />
+                                        <TableColumn fx:id="colop_credit" prefWidth="75.0" text="credit_id" />
+                                        <TableColumn fx:id="colop_dateop" prefWidth="75.0" text="date_opdate" />
+                                        <TableColumn fx:id="colop_man" prefWidth="75.0" text="mont_payer" />
+                                        <TableColumn fx:id="colop_echeance" prefWidth="100.800048828125" text="echeance date" />
+                                        <TableColumn fx:id="colop_taux" prefWidth="102.4000244140625" text="taux_interet" />
+                                        <TableColumn fx:id="colop_solvabilite" prefWidth="95.20001220703125" text="solvabilite" />
+                                        <TableColumn fx:id="colop_operation" prefWidth="99.199951171875" text="type_operation" />
+                                        <TableColumn fx:id="colop_dalate" prefWidth="93.5999755859375" text="delate" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </children>
 </AnchorPane>
