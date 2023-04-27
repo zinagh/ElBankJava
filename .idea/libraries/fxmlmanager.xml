@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fxmlmanager">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/fxmlmanager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

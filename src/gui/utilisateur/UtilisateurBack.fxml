@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.UtilisateurBackController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="671.0" prefWidth="200.0" style="-fx-background-color: #032a5f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="14.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/Images/logo-Final.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button layoutY="162.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #f6c23e;" text="Utilisateurs" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font></Button>
+
+                <Button fx:id="btnReclamationsBack" layoutX="27.0" layoutY="210.0" mnemonicParsing="false" onAction="#versReclamationsBack" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Reclamations" textFill="WHITE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="210.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+
+
+                <Button fx:id="ComptesBack" layoutX="40.0" layoutY="249.0" mnemonicParsing="false" onAction="#versComptesBack" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: transparent;" text="Comptes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+                <Button fx:id="TransactionsBack" layoutX="41.0" layoutY="293.0" mnemonicParsing="false" onAction="#versTransactionsBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Transactions" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+                <Button fx:id="btnChequesBack" layoutX="30.0" layoutY="339.0" mnemonicParsing="false" onAction="#versChequesBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Chèques" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnChequiersBack" layoutX="17.0" layoutY="387.0" mnemonicParsing="false" onAction="#versChequiersBack" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Chèquiers" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCreditsBack" layoutX="28.0" layoutY="430.0" mnemonicParsing="false" onAction="#versCreditsBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Crédits" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCartesBack" layoutX="42.0" layoutY="475.0" mnemonicParsing="false" onAction="#versCartesBack" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Cartes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cartes.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/profile.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="22.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/profile.png" />
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="12.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/piggy_bank.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/coins.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/contract.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnLogoutBack" layoutX="136.0" layoutY="617.0" mnemonicParsing="false" onAction="#versLogoutBack" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/Images/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAcceuilBack" layoutX="22.0" layoutY="115.0" mnemonicParsing="false" onAction="#versAccueilBack" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: transparent;" text="Acceuil" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/home.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="ContainerContenuBack" layoutX="200.0" layoutY="80.0" prefHeight="589.0" prefWidth="1003.0" style="-fx-background-color: #F0F8FF;" AnchorPane.bottomAnchor="1.3999999999999773" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TableView fx:id="TableViewBackUser" layoutX="23.0" layoutY="503.0" onMouseClicked="#On_Click_TableViewUser" prefHeight="206.0" prefWidth="945.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
+                    <columns>
+                        <TableColumn fx:id="cin_B" prefWidth="75.0" text="Cin" />
+                        <TableColumn fx:id="nom_B" prefWidth="75.0" text="Nom" />
+                        <TableColumn fx:id="prenom_B" prefWidth="75.0" text="Prenom" />
+                        <TableColumn fx:id="date_naissance_B" prefWidth="183.0" text="Naissance" />
+                        <TableColumn fx:id="email_B" prefWidth="195.0" text="Email" />
+                        <TableColumn fx:id="telephone_B" prefWidth="103.0" text="Telephone" />
+                        <TableColumn fx:id="role_B" prefWidth="119.0" text="Role" />
+
+                    </columns>
+                </TableView>
+                <Label layoutX="38.0" layoutY="24.0" text="Trier par : ">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Label>
+                <Separator layoutX="26.0" layoutY="65.0" prefHeight="0.0" prefWidth="923.0" />
+                <Label layoutX="34.0" layoutY="92.0" text="Recherche :">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="26.0" layoutY="121.0" prefHeight="0.0" prefWidth="923.0" />
+                <Label layoutX="45.0" layoutY="141.0" text="Cin" />
+                <TextField fx:id="cin_Ajout_B" layoutX="133.0" layoutY="137.0" prefHeight="29.0" prefWidth="178.0" promptText="CIN" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="nom_Ajout_B" layoutX="133.0" layoutY="174.0" prefHeight="29.0" prefWidth="178.0" promptText="Nom" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="prenom_Ajout_B" layoutX="133.0" layoutY="214.0" prefHeight="29.0" prefWidth="178.0" promptText="Prenom" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="telephone_Ajout_B" layoutX="133.0" layoutY="361.0" prefHeight="29.0" prefWidth="178.0" promptText="Numero Telephone" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="email_Ajout_B" layoutX="133.0" layoutY="325.0" prefHeight="29.0" prefWidth="178.0" promptText="Email" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <DatePicker fx:id="date_Ajout_B" layoutX="133.0" layoutY="257.0" promptText="Date naissance" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="role_Ajout_B" layoutX="133.0" layoutY="399.0" prefHeight="29.0" prefWidth="178.0" promptText="Role" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <Label layoutX="45.0" layoutY="178.0" text="Nom" />
+                <Label layoutX="45.0" layoutY="218.0" text="Prenom" />
+                <Label layoutX="45.0" layoutY="263.0" text="Date " />
+                <Label layoutX="45.0" layoutY="329.0" text="Email" />
+                <Label layoutX="45.0" layoutY="360.0" text="Telephone" />
+                <Label layoutX="45.0" layoutY="400.0" text="Role" />
+                <Label layoutX="45.0" layoutY="444.0" text="Mot de passe" />
+                <PasswordField fx:id="mdp_Ajout_B" layoutX="133.0" layoutY="440.0" prefHeight="29.0" prefWidth="178.0" promptText="Mot de passe" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <ImageView fitHeight="57.0" fitWidth="92.0" layoutX="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/logo.png" />
+                    </image>
+                </ImageView>
+
+                <Button fx:id="Ajouter_utilisateur_B" alignment="CENTER" layoutX="737.0" layoutY="153.0" mnemonicParsing="false" onAction="#On_Click_AjouterUtilisateur" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #f6c23e;" text="Ajouter Utilisateur" textAlignment="CENTER" textFill="#032a5f">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font></Button>
+                <Button fx:id="ModifierUtilisateur" alignment="CENTER" layoutX="736.0" layoutY="216.0" mnemonicParsing="false" onAction="#On_Click_ModifierU" prefHeight="40.0" prefWidth="182.0" style="-fx-background-color: #f6c23e;" text="Modifier Utilisateur" textAlignment="CENTER" textFill="#032a5f">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="btnResetUtilisateurBack" layoutX="906.0" layoutY="75.0" mnemonicParsing="false" onAction="#resetUtilisateurBack" prefHeight="34.0" prefWidth="7.0" style="-fx-background-color: #66b4de;">
+                    <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/Images/reset.png" />
+                            </image></ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="age" layoutX="134.0" layoutY="297.0" />
+                <Label fx:id="controleMdpBack" layoutX="134.0" layoutY="477.0" />
+                <TextField fx:id="rechercheAvance" layoutX="134.0" layoutY="87.0" prefHeight="25.0" prefWidth="178.0" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+            <Button fx:id="SupprimerUtilisateur1" alignment="CENTER" layoutX="736.0" layoutY="276.0" mnemonicParsing="false" onAction="#On_Click_SupprimerU" prefHeight="40.0" prefWidth="182.0" style="-fx-background-color: #f6c23e;" text="Supprimer Utilisateur" textAlignment="CENTER" textFill="#032a5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="200.0" prefHeight="80.0" prefWidth="1003.0" style="-fx-background-color: #032a5f;">
+            <children>
+                <Label layoutX="222.0" layoutY="7.0" prefHeight="66.0" prefWidth="533.0" text="La Liste Des Utilisateurs" textFill="#f6c23e">
+                    <font>
+                        <Font name="System Bold" size="45.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+    </children>
+</AnchorPane>
