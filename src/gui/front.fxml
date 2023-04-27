@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="806.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FrontController">
+   <children>
+      <Accordion prefHeight="806.0" prefWidth="1239.0">
+         <panes>
+            <TitledPane animated="false" text="credit">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
+                     <children>
+                        <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NUM DE COMPTE" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_num" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MONTANT" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_montan" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU PREMIER PAIEMENT" wrappingWidth="349.3366756439209">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="col_datep" prefHeight="26.0" prefWidth="328.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE DU DERNIER PAIEMENT  " wrappingWidth="346.9366512298584">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="col_dated" prefHeight="26.0" prefWidth="323.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DUREE DU PAIEMENT " wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_dur" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ECHEANCE" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="col_echance" prefHeight="26.0" prefWidth="330.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INTERET" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_inter" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ETAT CREDIT" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_etat" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE CREDIT" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_type" style="-fx-background-color: #1B98E00B;" />
+                              <Separator prefHeight="38.0" prefWidth="350.0" />
+                              <Button mnemonicParsing="false" onAction="#AJOUTER_cridt" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
+                              <Separator prefHeight="38.0" prefWidth="350.0" />
+                           </children>
+                        </VBox>
+                        <Text layoutX="350.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHERCHER" wrappingWidth="188.53668785095215">
+                           <font>
+                              <Font name="Bell MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="cher_cridit" layoutX="539.0" layoutY="1.0" onAction="#chercher" promptText="CHER...." style="-fx-background-color: #1B98E00B;" />
+                        <ScrollPane layoutX="350.0" layoutY="45.0" prefHeight="707.0" prefWidth="890.0">
+                           <content>
+                              <GridPane fx:id="gridProduit" prefHeight="726.0" prefWidth="874.0" style="-fx-background-color: #FFFFFFFFF;">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.60003662109375" minWidth="0.0" prefWidth="0.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="796.0" minWidth="10.0" prefWidth="796.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="operation_credit">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="800.0" style="-fx-background-color: #5DADEC;">
+                     <children>
+                        <VBox prefHeight="754.0" prefWidth="346.0" style="-fx-background-color: #7F7F7F;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit_id" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_cridtid" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date op" wrappingWidth="349.3366756439209">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="col_dateop" prefHeight="26.0" prefWidth="328.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="montan payer" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_mantanpayer" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="echnace" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="col_echnaaceop" prefHeight="26.0" prefWidth="330.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="interet" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_interetop" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solvabilite" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_solva" style="-fx-background-color: #1B98E00B;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="type opreration" wrappingWidth="284.53668785095215">
+                                 <font>
+                                    <Font name="Bell MT" size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="col_typeop" style="-fx-background-color: #1B98E00B;" />
+                              <Separator prefHeight="38.0" prefWidth="350.0" />
+                              <Button mnemonicParsing="false" onAction="#ajouter_op" prefHeight="26.0" prefWidth="355.0" style="-fx-background-color: #1B98E00B;" text="Ajouter" />
+                              <Separator prefHeight="38.0" prefWidth="350.0" />
+                           </children>
+                        </VBox>
+                        <Text layoutX="350.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHERCHER" wrappingWidth="188.53668785095215">
+                           <font>
+                              <Font name="Bell MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="cher_op" layoutX="539.0" layoutY="1.0" onAction="#chercher_op" promptText="CHER...." style="-fx-background-color: #1B98E00B;" />
+                        <ScrollPane layoutX="350.0" layoutY="45.0" prefHeight="707.0" prefWidth="878.0">
+                           <content>
+                              <GridPane fx:id="gridopreration" prefHeight="726.0" prefWidth="854.0" style="-fx-background-color: #FFFFFFFFF;">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.60003662109375" minWidth="0.0" prefWidth="0.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="796.0" minWidth="10.0" prefWidth="796.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
