@@ -453,7 +453,7 @@ public class ProfileController {
         if (selectionedReclamation.getEtat_rec().equals("Traité")) {
             Notifications n = Notifications.create()
                     .title("Erreur")
-                    .text("Suppression impossible: Reclamation en traitement ou traité")
+                    .text("Suppression impossible: Reclamation en traité")
                     .graphic(null)
                     .position(Pos.TOP_CENTER)
                     .hideAfter(Duration.seconds(5));
@@ -475,11 +475,9 @@ public class ProfileController {
             Optional<ButtonType> action = alert.showAndWait();
             if (action.get() == ButtonType.OK) {
                 new ReclamationCRUD().supprimerReclamation(listReclamation.get(0).getId());
-
+                initialize();
             }
-            afficherMesReclamationProfile();
         }
-refresh();
 
 
     }

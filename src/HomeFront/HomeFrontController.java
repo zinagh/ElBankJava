@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -45,6 +46,8 @@ public class HomeFrontController {
     private Button btnReclamationFront;
     @javafx.fxml.FXML
     private Button btnCalendrier;
+
+    private Stage popupStage;
 
     @javafx.fxml.FXML
     public void redirectCartesFront(ActionEvent actionEvent) {
@@ -218,33 +221,38 @@ public class HomeFrontController {
     @javafx.fxml.FXML
     public void redirectPopUp(Event event) {
         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/utilisateur/PopUpProfile.fxml"));
+            AnchorPane popupRoot = loader.load();
 
-            Stage stage = new Stage();
-            stage.initStyle(StageStyle.TRANSPARENT);
-            Parent root = FXMLLoader.load(getClass().getResource("/gui/utilisateur/PopUpProfile.fxml"));
+            // create a new stage for the popup
+            popupStage = new Stage();
+            popupStage.initStyle(StageStyle.TRANSPARENT);
 
-            Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
-            stage.setScene(scene);
-            stage.show();
+            // set the popup content and show it
+            Scene popupScene = new Scene(popupRoot);
+            popupStage.setScene(popupScene);
+            popupStage.show();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
 
+
     @javafx.fxml.FXML
     public void ciaoPopup(Event event) {
         try {
+            // close the popup stage if it is not null
+            if (popupStage != null) {
+                popupStage.close();
+            }
+
             root = FXMLLoader.load(getClass().getResource("HomeFront.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
         } catch (IOException ex) {
             Logger.getLogger(AutentificationController.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
-
 }
