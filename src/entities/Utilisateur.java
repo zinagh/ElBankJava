@@ -1,5 +1,7 @@
 package entities;
 
+import com.itextpdf.text.pdf.PdfPCell;
+
 import java.sql.Date;
 /**
  *
@@ -48,6 +50,10 @@ public class Utilisateur {
     public String getEtat() {
         return etat;
     }
+    public Date getDate_naissance() {
+        return date_naissance;
+    }
+
 
     public void setEtat(String etat) {
         this.etat = etat;
@@ -61,9 +67,7 @@ public class Utilisateur {
         this.id = id;
     }
 
-    public int getCin_u() {
-        return cin_u;
-    }
+
 
     public void setCin_u(int cin_u) {
         this.cin_u = cin_u;
@@ -71,6 +75,9 @@ public class Utilisateur {
 
     public String getNom_u() {
         return nom_u;
+    }
+    public int getCin_u() {
+        return cin_u;
     }
 
     public void setNom_u(String nom_u) {
@@ -85,9 +92,6 @@ public class Utilisateur {
         this.prenom_u = prenom_u;
     }
 
-    public Date getDate_naissance() {
-        return date_naissance;
-    }
 
     public void setDate_naissance(Date date_naissance) {
         this.date_naissance = date_naissance;

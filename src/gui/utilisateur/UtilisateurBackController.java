@@ -1,5 +1,6 @@
 package gui.utilisateur;
 
+import com.itextpdf.text.DocumentException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -17,11 +18,13 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 import entities.Utilisateur;
 import services.UtilisateurCRUD;
+import tools.MyPdf;
 
 import javax.swing.*;
 import java.io.IOException;
 import java.sql.Date;
 import java.time.LocalDate;
+import java.util.List;
 
 public class UtilisateurBackController {
     UtilisateurCRUD pcd = new UtilisateurCRUD();
@@ -61,6 +64,8 @@ public class UtilisateurBackController {
     private Button Ajouter_utilisateur_B;
     @javafx.fxml.FXML
     private Button ModifierUtilisateur;
+    @javafx.fxml.FXML
+    private Button Imprimer_utilisateur;
     @javafx.fxml.FXML
     private Button SupprimerUtilisateur1;
     int idModifier;
@@ -523,6 +528,16 @@ public class UtilisateurBackController {
     public void On_Click_SupprimerU(ActionEvent actionEvent) {
         pcd.supprimerUtilisateur(idModifier);
         refresh();
+    }
+    @javafx.fxml.FXML
+    public void On_Click_Imprimer(ActionEvent actionEvent) {
+        List<Utilisateur> userList = pcd.afficherUtilisateur();
+        try {
+            MyPdf.generate(userList , "utilisateurs.pdf");
+            System.out.println("PDF file created successfully.");
+        } catch (IOException | DocumentException e) {
+            System.out.println("Failed to generate PDF file: " + e.getMessage());
+        }
     }
     @javafx.fxml.FXML
     public void On_Click_TableViewUser(Event event) {
