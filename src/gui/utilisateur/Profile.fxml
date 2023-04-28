@@ -9,6 +9,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #032a5f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.ProfileController">
@@ -26,7 +27,7 @@
                         <TableColumn fx:id="tel_col" maxWidth="750.0" minWidth="18.0" prefWidth="106.0" text="Telephone" />
                     </columns>
                 </TableView>
-                <TableView fx:id="TableViewReclamtionProfile" layoutX="38.0" layoutY="249.0" prefHeight="154.0" prefWidth="398.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
+                <TableView fx:id="TableViewReclamtionProfile" layoutX="14.0" layoutY="178.0" prefHeight="154.0" prefWidth="398.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
                     <columns>
                         <TableColumn fx:id="type_rec_col" prefWidth="75.0" text="Type" />
                         <TableColumn fx:id="date_rec_col" prefWidth="103.0" text="Date" />
@@ -34,16 +35,22 @@
                         <TableColumn fx:id="desc_rec_col" prefWidth="137.0" text="Description" />
                     </columns>
                 </TableView>
-                <Button fx:id="supprimerRec" alignment="CENTER" layoutX="309.0" layoutY="419.0" mnemonicParsing="false" onAction="#supprimerReclamation" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="Supprimer" textAlignment="CENTER">
+                <Button fx:id="supprimerRec" alignment="CENTER" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#supprimerReclamation" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="Supprimer" textAlignment="CENTER">
                     <font>
                         <Font name="System Bold" size="13.0" />
                     </font>
                 </Button>
 
-                <Label layoutX="38.0" layoutY="205.0" text="Mes Reclamations : " textFill="#0b00ab">
+                <Label layoutX="35.0" layoutY="152.0" text="Mes Reclamations : " textFill="#0b00ab">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font></Label>
+            <Button fx:id="qrcode" alignment="CENTER" layoutX="476.0" layoutY="452.0" mnemonicParsing="false" onAction="#qrcodegenerate" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="QR Code" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <VBox fx:id="qrCodeContainer" layoutX="185.0" layoutY="359.0" prefHeight="217.0" prefWidth="264.0" />
 
             </children></AnchorPane>
         <AnchorPane layoutX="-6.0" layoutY="49.0" prefHeight="54.0" prefWidth="103.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 20; -fx-border-radius: 20;">

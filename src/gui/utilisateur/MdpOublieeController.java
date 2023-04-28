@@ -97,6 +97,7 @@ public class MdpOublieeController {
             new_pwd.setVisible(true);
             confirme_pwd.setVisible(true);
         }
+
         else{
             email_search.setStyle("-fx-border-color: #f00020");
             email_search.setText("-Email n'existe pas");

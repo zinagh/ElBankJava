@@ -1,8 +1,11 @@
 package gui.utilisateur;
 
+import com.google.zxing.WriterException;
 import entities.Reclamation;
 import entities.Session;
 import entities.Utilisateur;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 import services.ReclamationCRUD;
 import services.UtilisateurCRUD;
 import javafx.collections.FXCollections;
@@ -21,6 +24,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
+import tools.MyQRcode;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -99,6 +103,11 @@ public class ProfileController {
     private Button btnCompteFront;
     @FXML
     private Button supprimerRec;
+
+    @FXML
+    private Button qrcode;
+    @FXML
+    private VBox qrCodeContainer;
     static Reclamation selectionedReclamation;
 
     @Deprecated
@@ -481,4 +490,27 @@ public class ProfileController {
 
 
     }
+
+
+    @FXML
+    public void qrcodegenerate(ActionEvent actionEvent) {
+        UtilisateurCRUD pcd = new UtilisateurCRUD();
+        Utilisateur u = pcd.afficherProfile2(Session.getId());
+
+        String dataToEncode = String.format(
+                "Nom: %s\nPrenom: %s\nCIN: %d\nTelephone: %d\nEmail: %s",
+                u.getNom_u(), u.getPrenom_u(), u.getCin_u(), u.getNum_tel(), u.getEmail_u());
+        int width = 250;
+        int height = 250;
+
+        try {
+            ImageView qrCodeImageView = MyQRcode.generateQRCode(dataToEncode, width, height);
+            qrCodeContainer.getChildren().add(qrCodeImageView);
+        } catch (WriterException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
 }
