@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #032a5f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.ProfileController">
+    <children>
+        <AnchorPane layoutX="54.0" layoutY="49.0" prefHeight="582.0" prefWidth="915.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 30; -fx-border-radius: 30;">
+            <children>
+
+                <TableView fx:id="tabelViewProfile" layoutX="35.0" layoutY="65.0" onMouseClicked="#On_Click_TableViewProfile" prefHeight="73.0" prefWidth="593.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
+                    <columns>
+                        <TableColumn fx:id="cin_col" maxWidth="750.0" minWidth="30.0" prefWidth="75.0" text="Cin" />
+                        <TableColumn fx:id="nom_col" maxWidth="750.0" minWidth="30.0" prefWidth="75.0" text="Nom" />
+                        <TableColumn fx:id="prenom_col" maxWidth="750.0" minWidth="30.0" prefWidth="75.0" text="Prenom" />
+                        <TableColumn fx:id="date_naissance_col" maxWidth="750.0" minWidth="30.0" prefWidth="122.0" text="Naissance" />
+                        <TableColumn fx:id="email_col" maxWidth="750.0" minWidth="30.0" prefWidth="134.0" text="Email" />
+                        <TableColumn fx:id="tel_col" maxWidth="750.0" minWidth="18.0" prefWidth="106.0" text="Telephone" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="TableViewReclamtionProfile" layoutX="14.0" layoutY="178.0" prefHeight="154.0" prefWidth="398.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
+                    <columns>
+                        <TableColumn fx:id="type_rec_col" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="date_rec_col" prefWidth="103.0" text="Date" />
+                        <TableColumn fx:id="etat_rec_col" prefWidth="82.0" text="Etat" />
+                        <TableColumn fx:id="desc_rec_col" prefWidth="137.0" text="Description" />
+                    </columns>
+                </TableView>
+                <Button fx:id="supprimerRec" alignment="CENTER" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#supprimerReclamation" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="Supprimer" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+
+                <Label layoutX="35.0" layoutY="152.0" text="Mes Reclamations : " textFill="#0b00ab">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Label>
+            <Button fx:id="qrcode" alignment="CENTER" layoutX="476.0" layoutY="452.0" mnemonicParsing="false" onAction="#qrcodegenerate" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="QR Code" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <VBox fx:id="qrCodeContainer" layoutX="185.0" layoutY="359.0" prefHeight="217.0" prefWidth="264.0" />
+
+            </children></AnchorPane>
+        <AnchorPane layoutX="-6.0" layoutY="49.0" prefHeight="54.0" prefWidth="103.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 20; -fx-border-radius: 20;">
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="103.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/logo-Final.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnAccueilFront" layoutX="-9.0" layoutY="132.0" mnemonicParsing="false" onAction="#RedirectAccueilFront" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/home.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="btnCompteFront" layoutX="1.0" layoutY="185.0" mnemonicParsing="false" onAction="#redirectCompteFront" style="-fx-background-color: transparent;" />
+        <Button fx:id="btnTransFront" layoutX="3.0" layoutY="246.0" mnemonicParsing="false" onAction="#redirectTransactionsFront" style="-fx-background-color: transparent;" />
+
+        <Button fx:id="btnCreditFront" layoutY="434.0" mnemonicParsing="false" onAction="#redirectCreditFront" style="-fx-background-color: transparent;" />
+        <Button fx:id="btnCartesFront" layoutX="1.0" layoutY="494.0" mnemonicParsing="false" onAction="#redirectCartesFront" style="-fx-background-color: transparent;" />
+        <Button fx:id="btnChequesFront" layoutX="1.0" layoutY="311.0" mnemonicParsing="false" onAction="#redirectChequesFront" style="-fx-background-color: transparent;" />
+        <Button fx:id="btnReclamationFront" layoutX="1.0" layoutY="551.0" mnemonicParsing="false" onAction="#redirectReclamationFront" style="-fx-background-color: transparent;" />
+        <Button fx:id="btnProfileFront" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #f6c23e;" />
+        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="954.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Images/profile.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnLogoutFront" layoutX="944.0" layoutY="631.0" mnemonicParsing="false" onAction="#redirectLogoutFront" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/logout.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="224.0" text="~ Investissez, Adoptez, EL-Bank ... ~" textFill="#f6c23e">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cin_profile" layoutX="723.0" layoutY="109.0" prefHeight="25.0" prefWidth="174.0" promptText="CIN" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <TextField fx:id="nom_profile" layoutX="723.0" layoutY="146.0" prefHeight="25.0" prefWidth="174.0" promptText="Nom" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <TextField fx:id="prenom_profile" layoutX="723.0" layoutY="192.0" prefHeight="25.0" prefWidth="174.0" promptText="Prenom" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <TextField fx:id="telephone_profile" layoutX="723.0" layoutY="321.0" prefHeight="25.0" prefWidth="174.0" promptText="Telepohne" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <TextField fx:id="email_profile" layoutX="723.0" layoutY="279.0" prefHeight="25.0" prefWidth="174.0" promptText="Email" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <DatePicker fx:id="date_naissance_profile" layoutX="723.0" layoutY="231.0" promptText="Date naissance" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+
+        <Button fx:id="modifier_profile" alignment="CENTER" layoutX="721.0" layoutY="373.0" mnemonicParsing="false" onAction="#On_Click_Modifier_Profile" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #f6c23e;" text="Modifier Profile" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+          <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="12.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/piggy_bank.png" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="12.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/coins.png" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="10.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/cheques.png" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="12.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/contract.png" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="8.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/cartes.png" />
+              </image>
+          </ImageView>
+          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="11.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../assets/Images/reclamation.png" />
+              </image>
+          </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="9.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/Images/cheques.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="10.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/Images/cartes.png" />
+         </image>
+      </ImageView>
+
+    </children>
+</AnchorPane>

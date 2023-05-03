@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="590.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.AutentificationController">
+    <children>
+        <Pane prefHeight="590.0" prefWidth="501.0" style="-fx-background-color: #03224C;">
+            <children>
+                <TextField fx:id="cin" layoutX="155.0" layoutY="124.0" prefHeight="29.0" prefWidth="197.0" promptText="Carte identité" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="nom" layoutX="155.0" layoutY="168.0" prefHeight="29.0" prefWidth="197.0" promptText="First Name" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="prenom" layoutX="155.0" layoutY="212.0" prefHeight="29.0" prefWidth="197.0" promptText="Last Name" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <DatePicker fx:id="date_naissance" layoutX="155.0" layoutY="257.0" prefHeight="29.0" prefWidth="197.0" promptText="Birthday" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="email" layoutX="155.0" layoutY="336.0" prefHeight="29.0" prefWidth="197.0" promptText="info@info.info" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <TextField fx:id="telephone" layoutX="155.0" layoutY="382.0" prefHeight="29.0" prefWidth="197.0" promptText="Phone Number" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <PasswordField fx:id="mot_de_passe" layoutX="155.0" layoutY="427.0" prefHeight="29.0" prefWidth="197.0" promptText="Password" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+                <Button fx:id="inscription" layoutX="155.0" layoutY="491.0" mnemonicParsing="false" onAction="#On_Click_Inscription" prefHeight="29.0" prefWidth="197.0" style="-fx-background-color: f6c23e;" text="Inscription" />
+                <Pane prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: FFFFFF;">
+                    <children>
+                        <ImageView fitHeight="44.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/img/logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Label fx:id="age" layoutX="155.0" layoutY="304.0" textFill="WHITE" />
+                <Label fx:id="labelMdp" layoutX="155.0" layoutY="466.0" prefHeight="17.0" prefWidth="326.0" textFill="#ff3333" />
+            </children></Pane>
+        <TextField fx:id="email_login" layoutX="683.0" layoutY="179.0" prefHeight="36.0" prefWidth="184.0" promptText="user@info.com" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <PasswordField fx:id="mdp_login" layoutX="683.0" layoutY="234.0" prefHeight="36.0" prefWidth="184.0" promptText="Votre mot de passe" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+        <Button fx:id="connexion" layoutX="683.0" layoutY="298.0" mnemonicParsing="false" onAction="#On_Click_Connexion" prefHeight="29.0" prefWidth="184.0" style="-fx-background-color: #f6c23e;" stylesheets="@../../assets/Values/style.css" text="Connexion">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="mdp_oubliee" layoutX="683.0" layoutY="345.0" mnemonicParsing="false" onAction="#On_Click_mdp_Oubliee" prefHeight="30.0" prefWidth="184.0" style="-fx-background-color: #f6c23e;" stylesheets="@../../assets/Values/style.css" text="Mot de Passe Oubliée!!" underline="true">
+            <font>
+                <Font size="13.0" />
+            </font></Button>
+        <ImageView fitHeight="37.0" fitWidth="65.0" layoutX="618.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/img/login.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="56.0" fitWidth="52.0" layoutX="631.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/img/pwd.png" />
+            </image>
+        </ImageView>
+    </children>
+
+
+</AnchorPane>

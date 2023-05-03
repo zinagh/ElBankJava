@@ -1,0 +1,13 @@
+.left-side_background{
+    -fx-background-color: #B0C4DE;
+}
+.border{
+    -fx-border-color: #B0C4DE;
+    -fx-border-width: 1.5;
+}
+.button{
+    -fx-background-color:  #03224C;
+}
+ .button-Front{
+     -fx-background-color:  #f6c23e;
+ }
