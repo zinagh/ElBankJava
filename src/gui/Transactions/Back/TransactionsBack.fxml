@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="671.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Transactions.Back.TransactionsBackController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #032a5f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="14.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../assets/Images/logo-Final.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="btnUtilisateursBack" layoutX="24.0" layoutY="156.0" mnemonicParsing="false" onAction="#versUtilisateursBack" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Utilisateurs" textFill="WHITE" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="156.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnReclamationsBack" layoutX="29.0" layoutY="198.0" mnemonicParsing="false" onAction="#versReclamationsBack" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Reclamations" textFill="WHITE" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="198.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Separator layoutY="79.0" prefWidth="200.0" />
+                <Button fx:id="ComptesBack" layoutX="40.0" layoutY="240.0" mnemonicParsing="false" onAction="#versComptesBack" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: transparent;" text="Comptes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="TransactionsBack" layoutX="-4.0" layoutY="289.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="205.0" style="-fx-background-color: #f6c23e;" text="     Transactions" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnChequesBack" layoutX="30.0" layoutY="335.0" mnemonicParsing="false" onAction="#versChequesBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Chèques" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnChequiersBack" layoutX="17.0" layoutY="383.0" mnemonicParsing="false" onAction="#versChequiersBack" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Chèquiers" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCreditsBack" layoutX="28.0" layoutY="426.0" mnemonicParsing="false" onAction="#versCreditsBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Crédits" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCartesBack" layoutX="42.0" layoutY="471.0" mnemonicParsing="false" onAction="#versCartesBack" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Cartes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/cartes.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/profile.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/reclamation.png" />
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="21.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/piggy_bank.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="16.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/coins.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/contract.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnLogoutBack" layoutX="135.0" layoutY="613.0" mnemonicParsing="false" onAction="#versLogoutBack" prefHeight="43.0" prefWidth="14.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../assets/Images/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAcceuilBack" layoutX="26.0" layoutY="111.0" mnemonicParsing="false" onAction="#versAccueilBack" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Acceuil" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Images/home.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="contenuBack" layoutX="200.0" layoutY="79.60000000000002" prefHeight="594.0" prefWidth="1006.0" style="-fx-background-color: #F0F8FF;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TableView fx:id="transactions_Back" editable="true" layoutX="27.0" layoutY="311.0" onMousePressed="#doubleClickTransBack" prefHeight="255.0" prefWidth="952.0">
+                    <columns>
+                        <TableColumn fx:id="tabRibEmBack" prefWidth="118.39999008178711" text="RIB Emetteur" />
+                        <TableColumn fx:id="tabNomEmBack" prefWidth="128.8000030517578" text="Nom Emetteur" />
+                        <TableColumn fx:id="tabRibRecBack" prefWidth="125.80001831054688" text="RIB Récépteur" />
+                        <TableColumn fx:id="tabNomRecBanck" prefWidth="134.39996337890625" text="Nom Récépteur" />
+                        <TableColumn fx:id="tabMontantBack" prefWidth="93.60003662109375" text="Montant" />
+                        <TableColumn fx:id="tabTypeBack" minWidth="0.0" prefWidth="79.4000244140625" text="Type" />
+                        <TableColumn fx:id="tabDescriptionBack" minWidth="0.0" prefWidth="103.79998779296875" text="Description" />
+                        <TableColumn fx:id="tabDateBack" minWidth="0.0" prefWidth="104.4000244140625" text="Date Transaction" />
+                        <TableColumn fx:id="tabEtatBack" minWidth="0.0" prefWidth="71.5999755859375" text="Etat " />
+                    </columns>
+                </TableView>
+                <Separator layoutX="15.0" layoutY="28.0" prefHeight="0.0" prefWidth="923.0" />
+                <Label layoutX="33.0" layoutY="48.0" prefHeight="18.0" prefWidth="142.0" text="RIB Emetteur" />
+                <Label layoutX="33.0" layoutY="84.0" prefHeight="18.0" prefWidth="142.0" text="RIB Récepteur" />
+                <Label layoutX="34.0" layoutY="151.0" prefHeight="18.0" prefWidth="142.0" text="Montant" />
+                <Label layoutX="34.0" layoutY="189.0" prefHeight="18.0" prefWidth="142.0" text="Description" />
+                <Label layoutX="34.0" layoutY="226.0" prefHeight="18.0" prefWidth="141.0" text="Type Transaction" />
+                <TextField fx:id="RibRecepteurBack" layoutX="190.0" layoutY="89.0" prefHeight="26.0" prefWidth="182.0" promptText="XXXXXXXXX XXXXXXXXXXX XX" />
+                <TextField fx:id="MontantTransBack" layoutX="190.0" layoutY="149.0" promptText="Solde &gt; Montant " />
+                <TextField fx:id="DescriptionTransBack" layoutX="191.0" layoutY="187.0" promptText="Lettres uniquement" />
+                <ComboBox fx:id="RibEmetteurBack" editable="true" layoutX="189.0" layoutY="44.0" onAction="#OnComboboxRibEmet" prefHeight="26.0" prefWidth="372.0" promptText="Num Compte - Rib Emetteur" />
+                <ComboBox fx:id="TypeTransBack" layoutX="191.0" layoutY="225.0" prefHeight="26.0" prefWidth="190.0" promptText="Type Transaction">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Virement" />
+                            <String fx:value="Encaissement" />
+                            <String fx:value="Investissement" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <Button fx:id="btnAjouterTransBack" alignment="CENTER" layoutX="734.0" layoutY="102.0" mnemonicParsing="false" onAction="#ajouterTransactionBack" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #f6c23e;" text="Ajouter Transaction" textAlignment="CENTER" textFill="#032a5f">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnModiferTransBack" alignment="CENTER" layoutX="734.0" layoutY="164.0" mnemonicParsing="false" onAction="#modifierTransactionBack" prefHeight="40.0" prefWidth="182.0" style="-fx-background-color: #f6c23e;" text="Modifier Transaction" textAlignment="CENTER" textFill="#032a5f">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnSupprimerTransBack" alignment="CENTER" layoutX="734.0" layoutY="226.0" mnemonicParsing="false" onAction="#supprimerTransactionBack" prefHeight="40.0" prefWidth="182.0" style="-fx-background-color: #f6c23e;" text="Supprimer Transaction" textAlignment="CENTER" textFill="#032a5f">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnResetTransBack" layoutX="917.0" layoutY="14.0" mnemonicParsing="false" onAction="#resetTransactionBack" prefHeight="34.0" prefWidth="7.0" style="-fx-background-color: #66b4de;">
+                    <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../assets/Images/reset.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="controleEmetteurBack" layoutX="589.0" layoutY="47.0" prefHeight="19.0" prefWidth="200.0" text="* Veuillez choisir l'émetteur *" textFill="#e11010" visible="false">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="controleRibRecepteurBack" layoutX="415.0" layoutY="80.0" prefHeight="43.0" prefWidth="348.0" text="* Le RIB doit être sous la forme :                                          XXXXXXXXX XXXXXXXXXXX XX *" textFill="#e11010" visible="false" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="controleNomRecepteurBack" layoutX="381.0" layoutY="140.0" prefHeight="19.0" prefWidth="295.0" text="* Veuillez fournir le nom et le prénom *" textFill="#e11010" visible="false">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="controleMontantTransBack" layoutX="381.0" layoutY="171.0" prefHeight="40.0" prefWidth="295.0" text="* Le montant doit être inférieur au solde de l'emetteur *" textAlignment="CENTER" textFill="#e11010" visible="false" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="controleDescriptionBack" layoutX="381.0" layoutY="214.0" prefHeight="19.0" prefWidth="259.0" text="* Ce champs est obligatoire *" textFill="#e11010" visible="false">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="controleTypeTransBack" layoutX="395.0" layoutY="251.0" prefHeight="19.0" prefWidth="321.0" text="* Veuillez choisir un type de transaction *" textFill="#e11010" visible="false">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="ComboboxRibRecepteurBack" editable="true" layoutX="189.0" layoutY="89.0" onAction="#OnComboboxRibRecep" prefHeight="26.0" prefWidth="372.0" promptText="Num Compte - Rib Récepteur" />
+                <Button layoutX="113.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="26.0" style="-fx-background-color: transparent;" />
+                <Button fx:id="btnAnnulerAutreTransBack" layoutX="33.0" layoutY="102.0" mnemonicParsing="false" onAction="#AnnulerAutreRecepteurTransBack" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #e11010;" text="Annuler" textAlignment="CENTER" textFill="WHITE" visible="false">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="200.0" prefHeight="80.0" prefWidth="1005.0" style="-fx-background-color: #032a5f;">
+            <children>
+                <Label layoutX="190.0" layoutY="7.0" prefHeight="66.0" prefWidth="663.0" text="Les Transactions Bancaires" textFill="#f6c23e">
+                    <font>
+                        <Font name="System Bold" size="45.0" />
+                    </font>
+                </Label>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

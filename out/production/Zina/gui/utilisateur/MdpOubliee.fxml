@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #032a5f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.MdpOublieeController">
+   <children>
+      <AnchorPane layoutX="54.0" layoutY="49.0" prefHeight="582.0" prefWidth="904.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 30; -fx-border-radius: 30;">
+         <children>
+            <PasswordField fx:id="new_pwd" layoutX="582.0" layoutY="219.0" prefHeight="30.0" prefWidth="198.0" promptText="nouveau mot de passe" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+            <PasswordField fx:id="confirme_pwd" layoutX="582.0" layoutY="269.0" prefHeight="30.0" prefWidth="198.0" promptText="cofirmer mot de passe" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+            <Label fx:id="cntrlNewMdp" layoutX="582.0" layoutY="255.0" textFill="#ff1616" />
+            <Button fx:id="btn_modifier" layoutX="583.0" layoutY="324.0" mnemonicParsing="false" onAction="#On_Click_ModifierMDP" prefHeight="29.0" prefWidth="197.0" style="-fx-background-color: f6c23e;" text="Changer Mot de passe" />
+
+            <Label fx:id="cntrlConfirmeMdp" layoutX="582.0" layoutY="309.0" textFill="#ff1f1f" />
+            <Label fx:id="cntrlCode" layoutX="582.0" layoutY="203.0" textFill="#ff0d0d" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="-6.0" layoutY="49.0" prefHeight="54.0" prefWidth="103.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="103.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/Images/logo-Final.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnRetourLogin" layoutX="-2.0" layoutY="132.0" mnemonicParsing="false" onAction="#VersAutentification" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #f6c23e;">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="28.0" onDragDetected="#On_Click_RetourLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/Images/close2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+
+      <Label layoutX="224.0" text="~ Investissez, Adoptez, EL-BANK... ~" textFill="#f6c23e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="search" layoutX="199.0" layoutY="273.0" mnemonicParsing="false" onAction="#On_Click_Chercher" prefHeight="29.0" prefWidth="197.0" style="-fx-background-color: f6c23e;" text="Envoyer Le Code" />
+
+      <TextField fx:id="email_search" layoutX="200.0" layoutY="227.0" prefHeight="30.0" prefWidth="198.0" promptText="Votre Email" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+      <TextField fx:id="code" layoutX="635.0" layoutY="221.0" prefHeight="30.0" prefWidth="198.0" promptText="code de verification" styleClass="border" stylesheets="@../../assets/Values/style.css" />
+
+   </children>
+
+
+</AnchorPane>

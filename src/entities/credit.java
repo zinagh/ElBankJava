@@ -1,61 +1,39 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entities;
-
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
- * @author MSI
+ * @author Zina Ghribi
  */
-public class credit {
-       private int id;
-    private compte numeroCompteId;
-    private int montCredit;
-    private Date datePE;
-    private Date dateDE;
+public class Credit {
+      private int id;
+   private int montCredit;
+    private Date datepe;
+    private Date datede;
     private int dureeC;
     private Date echeance;
     private int tauxInteret;
     private boolean decision;
-    private String etatCredit;
-    private String typeCredit;
+    private String etatCredit,typeCredit;
+    private int numero_compte;
+    private int OperationCredits;
 
-    public credit(compte numeroCompteId, int montCredit, Date datePE, Date dateDE, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit) {
-        this.numeroCompteId = numeroCompteId;
+    public Credit(int id, int montCredit, Date datepe, Date datede, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit, int numero_compte) {
+        this.id = id;
         this.montCredit = montCredit;
-        this.datePE = datePE;
-        this.dateDE = dateDE;
+        this.datepe = datepe;
+        this.datede = datede;
         this.dureeC = dureeC;
         this.echeance = echeance;
         this.tauxInteret = tauxInteret;
         this.decision = decision;
         this.etatCredit = etatCredit;
         this.typeCredit = typeCredit;
-    }
-
-    public credit() {
-    }
-
-    public credit(int id) {
-        this.id = id;
-    }
-
-    public credit(int id, compte numeroCompteId, int montCredit, Date datePE, Date dateDE, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit) {
-        this.id = id;
-        this.numeroCompteId = numeroCompteId;
-        this.montCredit = montCredit;
-        this.datePE = datePE;
-        this.dateDE = dateDE;
-        this.dureeC = dureeC;
-        this.echeance = echeance;
-        this.tauxInteret = tauxInteret;
-        this.decision = decision;
-        this.etatCredit = etatCredit;
-        this.typeCredit = typeCredit;
+        this.numero_compte = numero_compte;
     }
 
     public int getId() {
@@ -66,14 +44,6 @@ public class credit {
         this.id = id;
     }
 
-    public compte getNumeroCompteId() {
-        return numeroCompteId;
-    }
-
-    public void setNumeroCompteId(compte numeroCompteId) {
-        this.numeroCompteId = numeroCompteId;
-    }
-
     public int getMontCredit() {
         return montCredit;
     }
@@ -82,20 +52,20 @@ public class credit {
         this.montCredit = montCredit;
     }
 
-    public Date getDatePE() {
-        return datePE;
+    public Date getDatepe() {
+        return datepe;
     }
 
-    public void setDatePE(Date datePE) {
-        this.datePE = datePE;
+    public void setDatepe(Date datepe) {
+        this.datepe = datepe;
     }
 
-    public Date getDateDE() {
-        return dateDE;
+    public Date getDatede() {
+        return datede;
     }
 
-    public void setDateDE(Date dateDE) {
-        this.dateDE = dateDE;
+    public void setDatede(Date datede) {
+        this.datede = datede;
     }
 
     public int getDureeC() {
@@ -146,12 +116,88 @@ public class credit {
         this.typeCredit = typeCredit;
     }
 
-    @Override
-    public String toString() {
-        return "credit{" + "id=" + id + ", numeroCompteId=" + numeroCompteId + ", montCredit=" + montCredit + ", datePE=" + datePE + ", dateDE=" + dateDE + ", dureeC=" + dureeC + ", echeance=" + echeance + ", tauxInteret=" + tauxInteret + ", decision=" + decision + ", etatCredit=" + etatCredit + ", typeCredit=" + typeCredit + '}';
+    public int getNumero_compte() {
+        return numero_compte;
+    }
+
+    public void setNumero_compte(int numero_compte) {
+        this.numero_compte = numero_compte;
+    }
+
+    public int getOperationCredits() {
+        return OperationCredits;
+    }
+
+    public void setOperationCredits(int OperationCredits) {
+        this.OperationCredits = OperationCredits;
+    }
+
+    public Credit(int montCredit, Date datepe, Date datede, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit, int numero_compte) {
+        this.montCredit = montCredit;
+        this.datepe = datepe;
+        this.datede = datede;
+        this.dureeC = dureeC;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.decision = decision;
+        this.etatCredit = etatCredit;
+        this.typeCredit = typeCredit;
+        this.numero_compte = numero_compte;
+    }
+
+    public Credit(int montCredit, Date datepe, Date datede, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit) {
+        this.montCredit = montCredit;
+        this.datepe = datepe;
+        this.datede = datede;
+        this.dureeC = dureeC;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.decision = decision;
+        this.etatCredit = etatCredit;
+        this.typeCredit = typeCredit;
+    }
+
+    public Credit() {
+    }
+
+    public Credit(int montCredit, int dureeC, int tauxInteret, boolean decision, String etatCredit, String typeCredit) {
+        this.montCredit = montCredit;
+        this.dureeC = dureeC;
+        this.tauxInteret = tauxInteret;
+        this.decision = decision;
+        this.etatCredit = etatCredit;
+        this.typeCredit = typeCredit;
+    }
+
+    
+
+    public Credit(int id, int montCredit, Date datepe, Date datede, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit, int numero_compte, int OperationCredits) {
+        this.id = id;
+        this.montCredit = montCredit;
+        this.datepe = datepe;
+        this.datede = datede;
+        this.dureeC = dureeC;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.decision = decision;
+        this.etatCredit = etatCredit;
+        this.typeCredit = typeCredit;
+        this.numero_compte = numero_compte;
+        this.OperationCredits = OperationCredits;
     }
     
-    
-    
-    
+    public Credit(int montCredit, Date datepe, Date datede, int dureeC, Date echeance, int tauxInteret, boolean decision, String etatCredit, String typeCredit, int numero_compte, int OperationCredits) {
+        this.montCredit = montCredit;
+        this.datepe = datepe;
+        this.datede = datede;
+        this.dureeC = dureeC;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.decision = decision;
+        this.etatCredit = etatCredit;
+        this.typeCredit = typeCredit;
+        this.numero_compte = numero_compte;
+        this.OperationCredits = OperationCredits;
+    }
+
 }

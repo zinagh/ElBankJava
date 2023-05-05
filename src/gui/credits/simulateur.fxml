@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.credits.simulateurController">
+    <children>
+        <Button fx:id="colsim" layoutX="269.0" layoutY="319.0" mnemonicParsing="false" onAction="#simuler_credit" prefHeight="26.0" prefWidth="115.0" text="Simuler le crédit" />
+        <Label fx:id="lbl_montant" layoutX="228.0" layoutY="25.0" text="Montant du crédit que vous voulez : " />
+        <Label fx:id="lbl_duree" layoutX="221.0" layoutY="89.0" text="La durée sur la quelle vous voulez le rendre :" />
+        <Label fx:id="lbl_salaire" layoutX="260.0" layoutY="164.0" text="Votre salaire par mois :" />
+        <TextField fx:id="txt_mt_credit" layoutX="246.0" layoutY="52.0" />
+        <TextField fx:id="txt_duree" layoutX="250.0" layoutY="117.0" />
+        <TextField fx:id="txt_salaire" layoutX="252.0" layoutY="210.0" />
+        <Label fx:id="txt_rs" layoutX="221.0" layoutY="279.0" prefHeight="18.0" prefWidth="227.0" />
+    </children>
+</AnchorPane>

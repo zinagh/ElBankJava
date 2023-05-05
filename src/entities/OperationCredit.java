@@ -1,32 +1,31 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entities;
-
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
- * @author MSI
+ * @author Zina Ghribi
  */
 public class OperationCredit {
-        private int id;
-    private credit credit;
+     private int id;
+   
     private Date dateOp;
+   
     private int montPayer;
     private Date echeance;
     private int tauxInteret;
-    private int solvabilite;
+   private int solvabilite;
     private String typeOperation;
+    private int creditid;
 
     public OperationCredit() {
     }
 
-    public OperationCredit(int id, credit credit, Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation) {
+    public OperationCredit(int id, Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation) {
         this.id = id;
-        this.credit = credit;
         this.dateOp = dateOp;
         this.montPayer = montPayer;
         this.echeance = echeance;
@@ -35,8 +34,7 @@ public class OperationCredit {
         this.typeOperation = typeOperation;
     }
 
-    public OperationCredit(credit credit, Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation) {
-        this.credit = credit;
+    public OperationCredit(Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation) {
         this.dateOp = dateOp;
         this.montPayer = montPayer;
         this.echeance = echeance;
@@ -44,6 +42,32 @@ public class OperationCredit {
         this.solvabilite = solvabilite;
         this.typeOperation = typeOperation;
     }
+
+    public OperationCredit(Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation, int creditid) {
+        this.dateOp = dateOp;
+        this.montPayer = montPayer;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.solvabilite = solvabilite;
+        this.typeOperation = typeOperation;
+        this.creditid = creditid;
+    }
+
+
+
+
+
+    public OperationCredit(int id, int creditid ,Date dateOp, int montPayer, Date echeance, int tauxInteret, int solvabilite, String typeOperation) {
+        this.id = id;
+        this.creditid = creditid;
+        this.dateOp = dateOp;
+        this.montPayer = montPayer;
+        this.echeance = echeance;
+        this.tauxInteret = tauxInteret;
+        this.solvabilite = solvabilite;
+        this.typeOperation = typeOperation;
+    }
+    
 
     public int getId() {
         return id;
@@ -51,14 +75,6 @@ public class OperationCredit {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public credit getCredit() {
-        return credit;
-    }
-
-    public void setCredit(credit credit) {
-        this.credit = credit;
     }
 
     public Date getDateOp() {
@@ -109,34 +125,15 @@ public class OperationCredit {
         this.typeOperation = typeOperation;
     }
 
-    @Override
-    public String toString() {
-        return "OperationCredit{" + "id=" + id + ", credit=" + credit + ", dateOp=" + dateOp + ", montPayer=" + montPayer + ", echeance=" + echeance + ", tauxInteret=" + tauxInteret + ", solvabilite=" + solvabilite + ", typeOperation=" + typeOperation + '}';
+    public int getCreditid() {
+        return creditid;
     }
 
-    public void setDPO(Date valueOf) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setCreditid(int creditid) {
+        this.creditid = creditid;
     }
 
-    public void setmontantPO(int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setecheanceo(Date valueOf) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setintereto(int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setsolv(int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void settype(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
     
 }

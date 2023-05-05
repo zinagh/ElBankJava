@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jPDFViewerFX">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jPDFViewerFX.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
