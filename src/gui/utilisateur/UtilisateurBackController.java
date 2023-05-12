@@ -569,8 +569,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../../Home/Home.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -593,8 +591,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../Comptes/Back/ComptesBack.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -612,8 +608,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../../Home/Home.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -631,8 +625,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../credits/Credit.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -650,8 +642,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../carte/AjoutCarte.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -669,8 +659,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("Autentification.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -688,8 +676,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../Reclamations/ReclamationBack.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -750,8 +736,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../Transactions/Back/TransactionsBack.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -769,8 +753,6 @@ public class UtilisateurBackController {
             Parent root = FXMLLoader.load(getClass().getResource("../../Home/Home.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {

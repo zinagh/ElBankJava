@@ -5,6 +5,7 @@ import entities.Reclamation;
 import entities.Session;
 import gui.utilisateur.AutentificationController;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -123,7 +124,21 @@ public class AjouterRecFrontController {
 
     @javafx.fxml.FXML
     public void redirectCreditFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Les Crédits");
+            Parent root = FXMLLoader.load(getClass().getResource("../credits/Frontusercredit.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @javafx.fxml.FXML
@@ -166,7 +181,21 @@ public class AjouterRecFrontController {
 
     @javafx.fxml.FXML
     public void redirectTransactionsFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Effectuer une Transaction Bancaire");
+            Parent root = FXMLLoader.load(getClass().getResource("../Transactions/Front/TransactionsFront.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @javafx.fxml.FXML
@@ -176,7 +205,21 @@ public class AjouterRecFrontController {
 
     @javafx.fxml.FXML
     public void redirectChequesFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Mes cheques & chequiers");
+            Parent root = FXMLLoader.load(getClass().getResource("../ChequesChequiers/FrontuserchequeController.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @javafx.fxml.FXML
@@ -227,4 +270,23 @@ public class AjouterRecFrontController {
         }
 
     }
+    @FXML
+    public void redirectReclamationFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
+
+            Stage stage = new Stage();
+            stage.setTitle("Passer Reclamations");
+            Parent root = FXMLLoader.load(getClass().getResource("AjouterRecFront.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
 }

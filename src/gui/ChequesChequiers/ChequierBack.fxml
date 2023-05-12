@@ -151,12 +151,12 @@
                                 <TableColumn fx:id="etat" prefWidth="99.0" text="Etat " />
                             </columns>
                         </TableView>
-                        <Button fx:id="confirmer" layoutX="45.0" layoutY="132.0" mnemonicParsing="false" onAction="#say" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: #03254c;" text="Confirmer la demande" textFill="WHITE">
+                        <Button fx:id="confirmer" layoutX="45.0" layoutY="132.0" mnemonicParsing="false" onAction="#addEtatColumn" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: #03254c;" text="Confirmer la demande" textFill="WHITE">
                             <font>
                                 <Font name="Gadugi" size="14.0" />
                             </font>
                         </Button>
-                        <Button fx:id="supprimer" layoutX="257.0" layoutY="131.0" mnemonicParsing="false" onAction="#said" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #03254c;" text="Supprimer" textFill="WHITE">
+                        <Button fx:id="supprimer" layoutX="257.0" layoutY="131.0" mnemonicParsing="false" onAction="#deletebtn" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #03254c;" text="Supprimer" textFill="WHITE">
                             <font>
                                 <Font name="Gadugi" size="14.0" />
                             </font>

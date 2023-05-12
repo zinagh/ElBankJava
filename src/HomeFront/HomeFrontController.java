@@ -49,24 +49,7 @@ public class HomeFrontController {
 
     private Stage popupStage;
 
-    @javafx.fxml.FXML
-    public void redirectCartesFront(ActionEvent actionEvent) {
-       /* try {
-//            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
-            Stage stage = new Stage();
-            stage.setTitle("Calendrier");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/CartesCategories/Calendar.fxml"));
-
-            Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        } */
-    }
 
     @javafx.fxml.FXML
     public void redirectLogoutFront(ActionEvent actionEvent) {
@@ -78,8 +61,6 @@ public class HomeFrontController {
             Parent root = FXMLLoader.load(getClass().getResource("/gui/utilisateur/Autentification.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -89,21 +70,19 @@ public class HomeFrontController {
 
     @javafx.fxml.FXML
     public void redirectCreditFront(ActionEvent actionEvent) {
-       /* try {
+       try {
             ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
             Stage stage = new Stage();
             stage.setTitle("Mes Crédits");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/CreditsOperations/affichercreditfront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/gui/credits/Frontusercredit.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
-        } */
+        }
     }
 
     @javafx.fxml.FXML
@@ -115,8 +94,6 @@ public class HomeFrontController {
             Parent root = FXMLLoader.load(getClass().getResource("/gui/utilisateur/Profile.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -124,24 +101,7 @@ public class HomeFrontController {
         }
     }
 
-    @javafx.fxml.FXML
-    public void redirectForumFront(ActionEvent actionEvent) {
-      /*  try {
-            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
-            Stage stage = new Stage();
-            stage.setTitle("Forum Bankiz");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/PublicationFront/PublicationFront.fxml"));
-
-            Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        } */
-    }
 
     @javafx.fxml.FXML
     public void redirectChequesFront(ActionEvent actionEvent) {
@@ -153,8 +113,25 @@ public class HomeFrontController {
             Parent root = FXMLLoader.load(getClass().getResource("../gui/ChequesChequiers/FrontuserchequeController.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+
+
+    @javafx.fxml.FXML
+    public void redirectTransactionsFront(ActionEvent actionEvent) {
+      try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
+
+            Stage stage = new Stage();
+            stage.setTitle("Effectuer une Transaction Bancaire");
+            Parent root = FXMLLoader.load(getClass().getResource("../gui/Transactions/Front/TransactionsFront.fxml"));
+
+            Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -163,59 +140,19 @@ public class HomeFrontController {
     }
 
     @javafx.fxml.FXML
-    public void redirectCompteFront(ActionEvent actionEvent) {
-       /* try {
-            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
-
-            Stage stage = new Stage();
-            stage.setTitle("Mon Compte Bancaire");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/Comptes/Front/MonCompteBancaire.fxml"));
-
-            Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        } */
-    }
-
-    @javafx.fxml.FXML
-    public void redirectTransactionsFront(ActionEvent actionEvent) {
-      /*  try {
-            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
-
-            Stage stage = new Stage();
-            stage.setTitle("Effectuer une Transaction Bancaire");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/Transactions/Front/TransactionsFront.fxml"));
-
-            Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        } */
-    }
-
-    @javafx.fxml.FXML
     public void redirectReclamationFront(ActionEvent actionEvent) {
-       /* try {
+       try {
             ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
             Stage stage = new Stage();
             stage.setTitle("Effectuer une Reclamation");
-            Parent root = FXMLLoader.load(getClass().getResource("/edu/bankiz/gui/Reclamations/AjouterRecFront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("../gui/Reclamations/AjouterRecFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../../Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
-        } */
+        }
     }
 
     @javafx.fxml.FXML
@@ -255,4 +192,10 @@ public class HomeFrontController {
             Logger.getLogger(AutentificationController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    @javafx.fxml.FXML
+    public void RedirectAccueilFront(Event event) {
+
+    }
+
+
 }

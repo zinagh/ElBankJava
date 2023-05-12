@@ -19,8 +19,6 @@ public class Home extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
             Scene scene = new Scene(root, 1203, 671);
             scene.setFill(Color.TRANSPARENT);
-            Image icon = new Image(getClass().getResourceAsStream("../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setTitle("Dashboard EL BAnk");
             stage.setScene(scene);
             stage.show();

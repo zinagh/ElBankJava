@@ -385,7 +385,7 @@ public class FrontuserchequeController implements Initializable {
     }
 
     @FXML
-    void redirectAccueilFront(ActionEvent event) {
+    void RedirectAccueilFront(ActionEvent event) {
         try {
             ((Node) (event.getSource())).getScene().getWindow().hide();
 
@@ -404,18 +404,60 @@ public class FrontuserchequeController implements Initializable {
     }
 
     @FXML
-    void redirectCartesFront(ActionEvent event) {
+    void redirectChequesFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Mes cheques & chequiers");
+            Parent root = FXMLLoader.load(getClass().getResource("FrontuserchequeController.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @FXML
-    void redirectCompteFront(ActionEvent event) {
+    void redirectReclamationFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Passer Reclamations");
+            Parent root = FXMLLoader.load(getClass().getResource("../Reclamations/AjouterRecFront.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @FXML
-    void redirectCreditFront(ActionEvent event) {
+    void redirectCreditFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Les Crédits");
+            Parent root = FXMLLoader.load(getClass().getResource("../credits/Frontusercredit.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @FXML
@@ -429,8 +471,22 @@ public class FrontuserchequeController implements Initializable {
     }
 
     @FXML
-    void redirectTransactionsFront(ActionEvent event) {
+    void redirectTransactionsFront(ActionEvent actionEvent) {
+        try {
+            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
 
+            Stage stage = new Stage();
+            stage.setTitle("Effectuer une Transaction Bancaire");
+            Parent root = FXMLLoader.load(getClass().getResource("../Transactions/Front/TransactionsFront.fxml"));
+
+            Scene scene = new Scene(root);
+            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
+            stage.getIcons().add(icon);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     @FXML

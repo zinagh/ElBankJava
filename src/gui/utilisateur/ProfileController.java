@@ -304,8 +304,6 @@ public class ProfileController {
             Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -323,8 +321,6 @@ public class ProfileController {
             Parent root = FXMLLoader.load(getClass().getResource("Autentification.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -339,11 +335,9 @@ public class ProfileController {
 
             Stage stage = new Stage();
             stage.setTitle("Les Crédits");
-            Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("../credits/Frontusercredit.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -361,8 +355,6 @@ public class ProfileController {
             Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -377,11 +369,9 @@ public class ProfileController {
 
             Stage stage = new Stage();
             stage.setTitle("Effectuer une Transaction Bancaire");
-            Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("../Transactions/Front/TransactionsFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -398,11 +388,9 @@ public class ProfileController {
 
             Stage stage = new Stage();
             stage.setTitle("Mes cheques & chequiers");
-            Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("../ChequesChequiers/FrontuserchequeController.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -420,8 +408,6 @@ public class ProfileController {
             Parent root = FXMLLoader.load(getClass().getResource("../Reclamations/AjouterRecFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -439,8 +425,6 @@ public class ProfileController {
             Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -510,6 +494,7 @@ public class ProfileController {
             e.printStackTrace();
         }
     }
+
 
 
 

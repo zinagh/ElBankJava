@@ -1,0 +1,66 @@
+<component name="ArtifactManager">
+  <artifact name="Zina:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Zina_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Zina.jar">
+        <element id="module-output" name="Zina" />
+      </element>
+      <element id="library" level="project" name="jl1.0" />
+      <element id="library" level="project" name="jfxtras-common-8.0-r6" />
+      <element id="library" level="project" name="poi-3.17" />
+      <element id="library" level="project" name="ojdbc8-21.5.0.0" />
+      <element id="library" level="project" name="poi-scratchpad-3.13-201509291" />
+      <element id="library" level="project" name="xmlbeans-2.6.0" />
+      <element id="library" level="project" name="jfxtras-test-support-8.0-r6" />
+      <element id="library" level="project" name="jfoenix-8.0.10" />
+      <element id="library" level="project" name="poi-scratchpad-3.13-20150929" />
+      <element id="library" level="project" name="json-20220320" />
+      <element id="library" level="project" name="poi-ooxml-3.13-20150929" />
+      <element id="library" level="project" name="jfxtras-fxml-8.0-r6" />
+      <element id="library" level="project" name="jxmaps-1.3.1" />
+      <element id="library" level="project" name="jxl" />
+      <element id="library" level="project" name="javafx.swing" />
+      <element id="library" level="project" name="gtranslateapi-1.0" />
+      <element id="library" level="project" name="jfxtras-icalendaragenda-8.0-r6" />
+      <element id="library" level="project" name="poi-3.13-20150929" />
+      <element id="library" level="project" name="poi-examples-3.13-20150929" />
+      <element id="library" level="project" name="icepdf-viewer-4.3.3" />
+      <element id="library" level="project" name="controlsfx-8.40.11" />
+      <element id="library" level="project" name="poi-ooxml-schemas-3.13-20150929" />
+      <element id="library" level="project" name="jfxtras-agenda-8.0-r6" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.23-bin" />
+      <element id="library" level="project" name="poi-ooxml-3.17" />
+      <element id="library" level="project" name="poi-ooxml-schemas-3.17" />
+      <element id="library" level="project" name="zxing-core-2.0" />
+      <element id="library" level="project" name="jfxtras-controls-8.0-r6" />
+      <element id="library" level="project" name="core-3.5.1 (1)" />
+      <element id="file-copy" path="$PROJECT_DIR$/javax.mail-1.6.2.jar" />
+      <element id="library" level="project" name="javafx.controls" />
+      <element id="library" level="project" name="poi-excelant-3.13-20150929" />
+      <element id="library" level="project" name="itextpdf-5.5.9" />
+      <element id="library" level="project" name="javafx.web" />
+      <element id="library" level="project" name="javafx.fxml" />
+      <element id="library" level="project" name="javafx.graphics" />
+      <element id="library" level="project" name="jPDFViewerFX" />
+      <element id="library" level="project" name="jfxtras-icalendarfx-8.0-r6" />
+      <element id="library" level="project" name="jxmaps-win-1.3.2" />
+      <element id="file-copy" path="$PROJECT_DIR$/mysql-connector-java-5.1.23-bin.jar" />
+      <element id="library" level="project" name="mail" />
+      <element id="library" level="project" name="jxmapsdemo" />
+      <element id="library" level="project" name="javax.mail" />
+      <element id="library" level="project" name="javax.mail-1.6.2" />
+      <element id="library" level="project" name="TrayNotification-5393c3a54f" />
+      <element id="library" level="project" name="fxmlmanager" />
+      <element id="library" level="project" name="jfoenix-8.0.2" />
+      <element id="library" level="project" name="javafx.media" />
+      <element id="library" level="project" name="icepdf-core-4.3.3" />
+      <element id="library" level="project" name="javafx-swt" />
+      <element id="library" level="project" name="fontawesomefx-8.9" />
+      <element id="library" level="project" name="jPDFNotes" />
+      <element id="library" level="project" name="zxing-1.7-javase" />
+      <element id="library" level="project" name="javafx.base" />
+      <element id="library" level="project" name="poi-ooxml-schemas-3.171" />
+      <element id="library" level="project" name="controlsfx-8.40.14" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="671.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ChequesChequiers.ChequeBackController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #032a5f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="14.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #F0F8FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fx:id="datec" fitHeight="105.0" fitWidth="188.0" layoutX="21.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/Images/logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="btnUtilisateursBack" layoutX="24.0" layoutY="156.0" mnemonicParsing="false" onAction="#versUtilisateursBack" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Utilisateurs" textFill="WHITE" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="156.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnReclamationsBack" layoutX="29.0" layoutY="198.0" mnemonicParsing="false" onAction="#versReclamationsBack" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Reclamations" textFill="WHITE" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="198.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Separator layoutY="79.0" prefWidth="200.0" />
+                <Button fx:id="ComptesBack" layoutX="40.0" layoutY="243.0" mnemonicParsing="false" onAction="#versComptesBack" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: transparent;" text="Comptes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="TransactionsBack" layoutX="41.0" layoutY="292.0" mnemonicParsing="false" onAction="#versTransactionsBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Transactions" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="TransactionsBack1" layoutX="30.0" layoutY="383.0" mnemonicParsing="false" onAction="#versChequesBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Chéquiers" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnChequiersBack" layoutX="-2.0" layoutY="333.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: #f6c23e;" text="Chéques" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCreditsBack" layoutX="28.0" layoutY="429.0" mnemonicParsing="false" onAction="#versCreditsBack" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Crédits" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCartesBack" layoutX="42.0" layoutY="474.0" mnemonicParsing="false" onAction="#versCartesBack" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Cartes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cartes.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/profile.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/reclamation.png" />
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="19.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/piggy_bank.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/coins.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="13.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/cheques.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="23.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/contract.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnLogout" layoutX="135.0" layoutY="613.0" mnemonicParsing="false" onAction="#versLogoutBack" prefHeight="43.0" prefWidth="14.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/Images/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAccueilBack" layoutX="4.0" layoutY="111.0" mnemonicParsing="false" onAction="#versAccueilBakc" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Accueil" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/Images/home.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="200.0" prefHeight="80.0" prefWidth="1005.0" style="-fx-background-color: #032a5f;">
+            <children>
+                <Label layoutX="311.0" layoutY="7.0" text="Chéque EL Bank" textFill="#f6c23e">
+                    <font>
+                        <Font name="System Bold" size="45.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <StackPane layoutX="200.0" layoutY="82.0" prefHeight="593.0" prefWidth="875.0" style="-fx-background-color: #02030A;">
+            <children>
+                <Pane fx:id="pnlOverview" prefHeight="594.0" prefWidth="930.0" style="-fx-background-color: white;">
+                    <children>
+                        <TableView fx:id="table" layoutX="-1.0" layoutY="179.0" prefHeight="302.0" prefWidth="984.0">
+                            <columns>
+                                <TableColumn fx:id="colid" prefWidth="84.00001525878906" text="id" />
+                                <TableColumn fx:id="prop" prefWidth="83.20004272460938" text="propriétaire_id" />
+                                <TableColumn fx:id="Destinataire" prefWidth="83.20004272460938" text="Destinataire" />
+                                <TableColumn fx:id="id_cheq" prefWidth="74.39996337890625" text="id_chéquier" />
+                                <TableColumn fx:id="montant" prefWidth="61.60003662109375" text="Montant" />
+                                <TableColumn fx:id="date_cheq" prefWidth="128.0" text="Date_cheque" />
+                                <TableColumn fx:id="signature" prefWidth="67.20001220703125" text="Signature" />
+                                <TableColumn fx:id="lieu" minWidth="0.0" prefWidth="61.5999755859375" text="Lieu" />
+                                <TableColumn fx:id="client_tel" prefWidth="75.0" text="Client_tel" />
+                                <TableColumn fx:id="rib_sender" prefWidth="75.0" text="RIB_sender" />
+                                <TableColumn fx:id="rib_receiver" prefWidth="75.0" text="Rib_receiver" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="supprimer" layoutX="96.0" layoutY="133.0" mnemonicParsing="false" onAction="#deletebtn" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #03254c;" text="Supprimer" textFill="WHITE">
+                            <font>
+                                <Font name="Gadugi" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="118.0" layoutY="40.0" prefHeight="17.0" prefWidth="50.0" text="ID" />
+                        <TextField fx:id="id_delete" layoutX="153.0" layoutY="36.0" />
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

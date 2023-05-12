@@ -373,7 +373,7 @@ public class TransactionsBackController implements Initializable {
     }
 
     @FXML
-    void modifierTransactionBack(ActionEvent event) {
+    void modifierTransactionBack(ActionEvent event) throws Exception {
         if (!transactions_Back.getSelectionModel().getSelectedCells().isEmpty()) {
 
             CompteController comptCont = new CompteController();

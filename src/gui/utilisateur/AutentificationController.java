@@ -87,8 +87,6 @@ public class AutentificationController {
             Parent root = FXMLLoader.load(getClass().getResource("MdpOubliee.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
@@ -114,9 +112,7 @@ public class AutentificationController {
                                 Parent root = FXMLLoader.load(getClass().getResource("../../HomeFront/HomeFront.fxml"));
                                 Scene scene = new Scene(root, 1000, 680);
                                 scene.setFill(Color.TRANSPARENT);
-                                Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
                                 Stage stage = new Stage();
-                                stage.getIcons().add(icon);
                                 stage.setTitle("EBank - EL Bank");
                                 stage.setScene(scene);
                                 System.out.println(Session.getId());
@@ -134,9 +130,7 @@ public class AutentificationController {
                             Parent root = FXMLLoader.load(getClass().getResource("../../Home/Home.fxml"));
                             Scene scene = new Scene(root, 1203, 671);
                             scene.setFill(Color.TRANSPARENT);
-                            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
                             Stage stage = new Stage();
-                            stage.getIcons().add(icon);
                             stage.setTitle("Dashboard EL Bank");
                             stage.setScene(scene);
                             stage.show();

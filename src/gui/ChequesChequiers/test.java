@@ -13,7 +13,7 @@ import java.io.IOException;
 public class test extends Application {
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FrontuserchequeController.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("ChequeBack.fxml"));
             Scene scene = new Scene(root, 1203, 671);
             scene.setFill(Color.TRANSPARENT);
             Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));

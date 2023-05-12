@@ -182,8 +182,6 @@ public class MdpOublieeController {
             Parent root = FXMLLoader.load(getClass().getResource("Autentification.fxml"));
 
             Scene scene = new Scene(root);
-            Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
-            stage.getIcons().add(icon);
             stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {

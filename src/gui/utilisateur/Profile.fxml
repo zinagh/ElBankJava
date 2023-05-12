@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #032a5f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.utilisateur.ProfileController">
     <children>
-        <AnchorPane layoutX="54.0" layoutY="49.0" prefHeight="582.0" prefWidth="915.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 30; -fx-border-radius: 30;">
+        <AnchorPane layoutX="54.0" layoutY="49.0" prefHeight="582.0" prefWidth="901.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 30; -fx-border-radius: 30;">
             <children>
 
                 <TableView fx:id="tabelViewProfile" layoutX="35.0" layoutY="65.0" onMouseClicked="#On_Click_TableViewProfile" prefHeight="73.0" prefWidth="593.0" styleClass="border" stylesheets="@../../assets/Values/style.css">
@@ -45,12 +45,12 @@
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font></Label>
-            <Button fx:id="qrcode" alignment="CENTER" layoutX="476.0" layoutY="452.0" mnemonicParsing="false" onAction="#qrcodegenerate" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="QR Code" textAlignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <VBox fx:id="qrCodeContainer" layoutX="185.0" layoutY="359.0" prefHeight="217.0" prefWidth="264.0" />
+                <Button fx:id="qrcode" alignment="CENTER" layoutX="476.0" layoutY="452.0" mnemonicParsing="false" onAction="#qrcodegenerate" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #f6c23e;" text="QR Code" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <VBox fx:id="qrCodeContainer" layoutX="185.0" layoutY="359.0" prefHeight="217.0" prefWidth="264.0" />
 
             </children></AnchorPane>
         <AnchorPane layoutX="-6.0" layoutY="49.0" prefHeight="54.0" prefWidth="103.0" style="-fx-background-color: #F0F8FF; -fx-background-radius: 20; -fx-border-radius: 20;">
@@ -62,22 +62,6 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <Button fx:id="btnAccueilFront" layoutX="-9.0" layoutY="132.0" mnemonicParsing="false" onAction="#RedirectAccueilFront" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: transparent;">
-            <graphic>
-                <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../assets/Images/home.png" />
-                    </image>
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="btnCompteFront" layoutX="1.0" layoutY="185.0" mnemonicParsing="false" onAction="#redirectCompteFront" style="-fx-background-color: transparent;" />
-        <Button fx:id="btnTransFront" layoutX="3.0" layoutY="246.0" mnemonicParsing="false" onAction="#redirectTransactionsFront" style="-fx-background-color: transparent;" />
-
-        <Button fx:id="btnCreditFront" layoutY="434.0" mnemonicParsing="false" onAction="#redirectCreditFront" style="-fx-background-color: transparent;" />
-        <Button fx:id="btnCartesFront" layoutX="1.0" layoutY="494.0" mnemonicParsing="false" onAction="#redirectCartesFront" style="-fx-background-color: transparent;" />
-        <Button fx:id="btnChequesFront" layoutX="1.0" layoutY="311.0" mnemonicParsing="false" onAction="#redirectChequesFront" style="-fx-background-color: transparent;" />
-        <Button fx:id="btnReclamationFront" layoutX="1.0" layoutY="551.0" mnemonicParsing="false" onAction="#redirectReclamationFront" style="-fx-background-color: transparent;" />
         <Button fx:id="btnProfileFront" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #f6c23e;" />
         <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="954.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -110,46 +94,36 @@
                 <Font name="System Bold" size="13.0" />
             </font>
         </Button>
-          <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="12.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="12.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Images/coins.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="47.0" fitWidth="37.0" layoutX="9.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Images/reclamation.png" />
+            </image>
+        </ImageView>
+          <ImageView fitHeight="28.0" fitWidth="24.0" layoutX="16.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
               <image>
-                  <Image url="@../../assets/Images/piggy_bank.png" />
+                  <Image url="@../../assets/Images/home.png" />
               </image>
           </ImageView>
-          <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="12.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                  <Image url="@../../assets/Images/coins.png" />
-              </image>
-          </ImageView>
-          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="10.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                  <Image url="@../../assets/Images/cheques.png" />
-              </image>
-          </ImageView>
-          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="12.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                  <Image url="@../../assets/Images/contract.png" />
-              </image>
-          </ImageView>
-          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="8.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                  <Image url="@../../assets/Images/cartes.png" />
-              </image>
-          </ImageView>
-          <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="11.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                  <Image url="@../../assets/Images/reclamation.png" />
-              </image>
-          </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="9.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../assets/Images/cheques.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="10.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../assets/Images/cartes.png" />
-         </image>
-      </ImageView>
+        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="10.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Images/cheques.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="11.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Images/cartes.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="btnAccueilFront" layoutX="-2.0" layoutY="116.0" mnemonicParsing="false" onAction="#RedirectAccueilFront" prefHeight="50.0" prefWidth="62.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btnTransFront" layoutX="4.0" layoutY="175.0" mnemonicParsing="false" onAction="#redirectTransactionsFront" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btnChequesFront" layoutX="-2.0" layoutY="221.0" mnemonicParsing="false" onAction="#redirectChequesFront" prefHeight="39.0" prefWidth="55.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btnCreditFront" layoutX="2.0" layoutY="279.0" mnemonicParsing="false" onAction="#redirectCreditFront" prefHeight="47.0" prefWidth="55.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btnReclamationFront" layoutX="3.0" layoutY="339.0" mnemonicParsing="false" onAction="#redirectReclamationFront" prefHeight="50.0" prefWidth="47.0" style="-fx-background-color: transparent;" />
 
     </children>
 </AnchorPane>

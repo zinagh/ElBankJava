@@ -14,7 +14,7 @@ public class maintest  extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("Credit.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Frontusercredit.fxml"));
             Scene scene = new Scene(root, 1203, 671);
             scene.setFill(Color.TRANSPARENT);
             Image icon = new Image(getClass().getResourceAsStream("../../assets/Images/logo-Final.png"));
